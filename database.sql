@@ -151,9 +151,9 @@ CREATE TABLE admin_settings (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
--- Insert default admin user (password: admin123)
+-- Insert default admin user (username: super, password: 1234)
 INSERT INTO users (username, email, password, full_name, role, verified) 
-VALUES ('super', 'admin@bankingkhonde.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'System Administrator', 'admin', 'yes');
+VALUES ('super', 'admin@bankingkhonde.com', '$2y$12$n8dESy0Ea6fhGuQ8koq8q.BznZUNL3tjfsRkiV5YTpZnamhxQAg3G', 'System Administrator', 'admin', 'yes');
 
 -- Insert some default admin settings
 INSERT INTO admin_settings (setting_key, setting_value, description) VALUES
